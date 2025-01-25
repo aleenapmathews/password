@@ -1,7 +1,13 @@
 h1{
       font-size: 3rem;
-}
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
+}
+.about h1 span{
+      color: rgb(43, 30, 138);
+}
 h3{
       font-size: 2rem;
 }

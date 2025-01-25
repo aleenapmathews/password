@@ -3,7 +3,7 @@ import styles from './about.module.css'
 export default function About() {
   return (
     <div className={styles.about}id="about">
-      <h1>AboutUs</h1>
+      <h1>About<span>U</span>s</h1>
       <h3>Welcome to SecureCode</h3>
       <div className={styles.content}>
         At SecureCode, we believe that your online security starts with strong

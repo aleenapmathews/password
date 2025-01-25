@@ -6,7 +6,7 @@ export default function Header({ setPage }) {
   };
   return (
     <header className={styles.header}>
-      <h1>SecureCode</h1>
+      <h1>Secure<span>Code</span></h1>
       <div className={styles.container}>
         <nav className={styles.navbar}>
           <a href="#home" onClick={() => handleClick("home")}>
