@@ -16,7 +16,7 @@ export default function Header({ setPage }) {
             about
           </a>
         </nav>
-      </div>
+      </div> 
     </header>
   );
 }
