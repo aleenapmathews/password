@@ -1,13 +1,20 @@
 import styles from "./header.module.css";
 
-export default function Header() {
+export default function Header({ setPage }) {
+  const handleClick = (page) => {
+    setPage(page);
+  };
   return (
     <header className={styles.header}>
-      <h1>Password Generator</h1>
+      <h1>SecureCode</h1>
       <div className={styles.container}>
         <nav className={styles.navbar}>
-          <a href="#home">home</a>
-          <a href="#about">about</a>
+          <a href="#home" onClick={() => handleClick("home")}>
+            home
+          </a>
+          <a href="#about" onClick={() => handleClick("about")}>
+            about
+          </a>
         </nav>
       </div>
     </header>

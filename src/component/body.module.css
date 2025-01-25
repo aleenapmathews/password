@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+
+
+}
+body {
+  font-family: tahoma;
+  padding-top:150px ;
+  
+}
+.password_generator {
+  max-width: 500px;
+  height: 510px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #3b2f2f;
+  border-radius: 5px;
+  margin-top: 30px;
+ 
+  
+}
+
+h2{
+  font-size: 3rem;
+
+}
+
+label{
+ font-size: 1.4rem;
+}
+
+
+.form_group {
+  margin-bottom: 30px;
+}
+.generate_btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.7rem;
+
+}
+.password_display {
+  margin-top: 60px;
+  font-size: 1rem;
+}
+
+.password_display h3{
+  font-size: 2rem;
+}
+
+.password_input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px; 
+  margin-top: 0; 
+  flex-wrap: 1;
+  height: 20px;
+}
+
+.password_display input{
+  font-size: 2rem ;
+}
+
+

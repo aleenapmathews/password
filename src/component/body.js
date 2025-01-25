@@ -1,35 +1,33 @@
 import { useState } from "react";
-// import "./App.css";
+import styles from "./body.module.css";
 
 export default function Body() {
-  const [password, setPassword] = useState('');
+  const [password, setPassword] = useState("");
   const [length, setLength] = useState(0);
   const [includeNumbers, setIncludeNumbers] = useState(false);
   const [includeSymbols, setIncludeSymbols] = useState(false);
   const [includeupperLetters, setIncludeupperLetters] = useState(false);
   const [includelowerLetters, setIncludelowerLetters] = useState(false);
 
-
   const generatePassword = () => {
-    const numbers = '1234567890';
-    const symbols = '!@#$%^&*()_+{}[]|:;<>,.?/~';
-    const lowerletters = 'abcdefghijklmnopqrstuvwxyz';
-    const upperletters='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const numbers = "1234567890";
+    const symbols = "!@#$%^&*()_+{}[]|:;<>,.?/~";
+    const lowerletters = "abcdefghijklmnopqrstuvwxyz";
+    const upperletters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    let chars = '';
+    let chars = "";
 
     if (includeNumbers) chars += numbers;
     if (includeSymbols) chars += symbols;
     if (includeupperLetters) chars += upperletters;
     if (includelowerLetters) chars += lowerletters;
 
-    // Validate that at least one character type is selected
     if (!chars) {
       alert("Please select at least one character type!");
       return;
     }
 
-    let generatedPassword = '';
+    let generatedPassword = "";
     for (let i = 0; i < length; i++) {
       const randomIndex = Math.floor(Math.random() * chars.length);
       generatedPassword += chars[randomIndex];
@@ -39,10 +37,10 @@ export default function Body() {
   };
 
   return (
-    <div className="password-generator">
+    <div className={styles.password_generator}>
       <h2>Password Generator</h2>
 
-      <div className="form-group">
+      <div className={styles.form_group}>
         <label>Password Length:</label>
         <input
           type="number"
@@ -51,7 +49,7 @@ export default function Body() {
         />
       </div>
 
-      <div className="form-group">
+      <div className={styles.form_group}>
         <label>Include upper Letters:</label>
         <input
           type="checkbox"
@@ -60,7 +58,7 @@ export default function Body() {
         />
       </div>
 
-      <div className="form-group">
+      <div className={styles.form_group}>
         <label>Include lower Letters:</label>
         <input
           type="checkbox"
@@ -69,7 +67,7 @@ export default function Body() {
         />
       </div>
 
-      <div className="form-group">
+      <div className={styles.form_group}>
         <label>Include Numbers:</label>
         <input
           type="checkbox"
@@ -78,7 +76,7 @@ export default function Body() {
         />
       </div>
 
-      <div className="form-group">
+      <div className={styles.form_group}>
         <label>Include Symbols:</label>
         <input
           type="checkbox"
@@ -87,12 +85,12 @@ export default function Body() {
         />
       </div>
 
-      <button className="generate-btn" onClick={generatePassword}>
+      <button className={styles.generate_btn} onClick={generatePassword}>
         Generate Password
       </button>
 
       {password && (
-        <div className="password-display">
+        <div className={styles.password_display}>
           <h3>Generated Password:</h3>
           <input
             className="password-input"
@@ -105,5 +103,3 @@ export default function Body() {
     </div>
   );
 }
-
-
