@@ -1,16 +1,13 @@
-.footer {
-      background-color:rgb(43, 30, 138) ;
-      color: rgb(196, 196, 207);
-      text-align: center;
-      padding: 20px 0;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      margin :0px;
-      height: 7%;
-    }
-    .footer-text p {
-      font-size: 1.6rem;
-      
-    } 
-    
+  .footer {
+    background-color: rgb(43, 30, 138);
+    color: rgb(196, 196, 207);
+    text-align: center;
+    padding: 20px 0;
+    position: fixed; 
+    width: 100%;
+    margin: 0;
+    height: 7%;
+    bottom: 0;
+    left: 0;
+  }
+  

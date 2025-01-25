@@ -5,6 +5,9 @@ h1{
       justify-content: center;
 
 }
+.about{
+      padding-top: 120px;
+}
 .about h1 span{
       color: rgb(43, 30, 138);
 }
