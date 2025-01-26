@@ -10,10 +10,10 @@ export default function Header({ setPage }) {
       <div className={styles.container}>
         <nav className={styles.navbar}>
           <a href="#home" onClick={() => handleClick("home")}>
-            home
+            Home
           </a>
           <a href="#about" onClick={() => handleClick("about")}>
-            about
+            About
           </a>
         </nav>
       </div> 

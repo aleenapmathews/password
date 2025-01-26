@@ -9,8 +9,7 @@ export default function App() {
   return (
     <div>
       <Header setPage={setPage}></Header>
-     
-
+    
       {page === "home" ? <Body></Body> : <About></About>}
       <Footer></Footer>
     </div>
