@@ -8,11 +8,21 @@ body {
 .password_generator {
   max-width: 500px;
   height: 500px;
+  position: relative;
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #3b2f2f;
   border-radius: 5px;
   margin-top: 30px;
+}
+
+.checkbox{
+  transform: scale(2);
+  margin-left: 1rem;
+}
+.passlen{
+  transform: scale(1.4);
+  margin-left: 3rem;
 }
 
 h2 {

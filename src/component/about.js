@@ -45,11 +45,6 @@ export default function About() {
         digital safety. In today’s digital world, protecting your accounts with
         strong passwords is no longer optional—it’s essential.
       </div>
-      <h3>Stay Connected</h3>
-      <div className={styles.content}>
-        Got questions or feedback? We'd love to hear from you! Reach out to us
-        anytime through our Contact Us page.
-      </div>
     </div>
   );
 }

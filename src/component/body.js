@@ -3,7 +3,7 @@ import styles from "./body.module.css";
 
 export default function Body() {
   const [password, setPassword] = useState("");
-  const [strength, setStrength] = useState(""); 
+  const [strength, setStrength] = useState("");
   const [length, setLength] = useState(0);
   const [includeNumbers, setIncludeNumbers] = useState(false);
   const [includeSymbols, setIncludeSymbols] = useState(false);
@@ -20,7 +20,6 @@ export default function Body() {
     if (/[0-9]/.test(password)) strengthScore++;
     if (/[^A-Za-z0-9]/.test(password)) strengthScore++;
 
-    
     if (strengthScore <= 2) return "Weak";
     if (strengthScore <= 4) return "Medium";
     return "Strong";
@@ -51,74 +50,82 @@ export default function Body() {
     }
 
     setPassword(generatedPassword);
-    setStrength(calculateStrength(generatedPassword)); 
+    setStrength(calculateStrength(generatedPassword));
   };
 
   return (
-    <div className={styles.password_generator}>
-      <h2>Password Generator</h2>
+    <div>
+      
+      <div className={styles.password_generator}>
+        <h2>Password Generator</h2>
 
-      <div className={styles.form_group}>
-        <label>Password Length:</label>
-        <input
-          type="number"
-          value={length}
-          onChange={(e) => setLength(parseInt(e.target.value) || 0)}
-        />
-      </div>
-
-      <div className={styles.form_group}>
-        <label>Include upper Letters:</label>
-        <input
-          type="checkbox"
-          checked={includeupperLetters}
-          onChange={(e) => setIncludeupperLetters(e.target.checked)}
-        />
-      </div>
-
-      <div className={styles.form_group}>
-        <label>Include lower Letters:</label>
-        <input
-          type="checkbox"
-          checked={includelowerLetters}
-          onChange={(e) => setIncludelowerLetters(e.target.checked)}
-        />
-      </div>
-
-      <div className={styles.form_group}>
-        <label>Include Numbers:</label>
-        <input
-          type="checkbox"
-          checked={includeNumbers}
-          onChange={(e) => setIncludeNumbers(e.target.checked)}
-        />
-      </div>
-
-      <div className={styles.form_group}>
-        <label>Include Symbols:</label>
-        <input
-          type="checkbox"
-          checked={includeSymbols}
-          onChange={(e) => setIncludeSymbols(e.target.checked)}
-        />
-      </div>
-
-      <button className={styles.generate_btn} onClick={generatePassword}>
-        Generate Password
-      </button>
-
-      {password && (
-        <div className={styles.password_display}>
-          <h3>Generated Password:</h3>
+        <div className={styles.form_group}>
+          <label>Password Length:</label>
           <input
-            className="password-input"
-            type="text"
-            readOnly
-            value={password}
+            className={styles.passlen}
+            type="number"
+            value={length}
+            onChange={(e) => setLength(parseInt(e.target.value) || 0)}
           />
-          <h4>Password Strength: {strength}</h4> 
         </div>
-      )}
+
+        <div className={styles.form_group}>
+          <label>Include upper Letters:</label>
+          <input
+            className={styles.checkbox}
+            type="checkbox"
+            checked={includeupperLetters}
+            onChange={(e) => setIncludeupperLetters(e.target.checked)}
+          />
+        </div>
+
+        <div className={styles.form_group}>
+          <label>Include lower Letters:</label>
+          <input
+            className={styles.checkbox}
+            type="checkbox"
+            checked={includelowerLetters}
+            onChange={(e) => setIncludelowerLetters(e.target.checked)}
+          />
+        </div>
+
+        <div className={styles.form_group}>
+          <label>Include Numbers:</label>
+          <input
+            className={styles.checkbox}
+            type="checkbox"
+            checked={includeNumbers}
+            onChange={(e) => setIncludeNumbers(e.target.checked)}
+          />
+        </div>
+
+        <div className={styles.form_group}>
+          <label>Include Symbols:</label>
+          <input
+            className={styles.checkbox}
+            type="checkbox"
+            checked={includeSymbols}
+            onChange={(e) => setIncludeSymbols(e.target.checked)}
+          />
+        </div>
+
+        <button className={styles.generate_btn} onClick={generatePassword}>
+          Generate Password
+        </button>
+
+        {password && (
+          <div className={styles.password_display}>
+            <h3>Generated Password:</h3>
+            <input
+              className="password-input"
+              type="text"
+              readOnly
+              value={password}
+            />
+            <h3>Password Strength: {strength}</h3>
+          </div>
+        )}
+      </div>
     </div>
   );
 }
