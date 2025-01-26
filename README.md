@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+##SecureCode
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+#Basic Details
+-Front-end:React,html,css,javascript
 
-In the project directory, you can run:
+#Team Name:Lumino
 
-### `npm start`
+#Team Members
+-Aleena P Mathews-Saintgits Collage of Engineering
+-Alna Soni-Saintgits Collage of Engineering
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#Hosted Project Link
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#Project Description
+The Password Generator website creates secure, random, and customizable passwords for users, ensuring strong online account security and convenience in managing credentials.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#The Problem Statement
+People are terrible at creating strong passwords. They either use overly simple passwords or repeat the same one everywhere, making their accounts vulnerable to hacking.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#The Solution
+We’re bringing fun and function together by automating the password creation process with a secure generator. It’s easy to use, customizable, and makes sure your password isn’t “password123” ever again!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+##Technical Details
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#Technologies/Components Used
+For Software:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Languages used: HTML, CSS, JavaScript
+Frameworks used: React
+Tools used: VS Code, Git, GitHub
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+##implementation
+This project is a Password Generator and Strength Identifier website that helps users create strong, secure, and unique passwords while identifying weak ones. It ensures password safety by providing real-time feedback on password strength and suggesting improvements for weak passwords. The platform also generates customizable, complex passwords based on user-defined criteria, enhancing online security.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+##Installation
 
-## Learn More
+##Run
+npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+##Project Documentation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
