@@ -12,6 +12,8 @@
 
 #Hosted Project Link:https://drive.google.com/drive/folders/1oXnZdTBuqV67Rx7aXMzsFqVeuHHttoCj?usp=sharing
 
+link:https://password-5dn3mg0b8-aleenas-projects-3c1d88eb.vercel.app/
+
 #Project Description
 The Password Generator website creates secure, random, and customizable passwords for users, ensuring strong online account security and convenience in managing credentials.
 
