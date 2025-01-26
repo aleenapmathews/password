@@ -43,6 +43,10 @@ This project is a Password Generator and Strength Identifier website that helps 
 npm start
 
 ##Project Documentation
+#Screenshots
+![homepage](Screenshot from 2025-01-26 10-46-20.png)
+![aboutus page](Screenshot from 2025-01-26 10-46-26.png)
+![example page](Screenshot from 2025-01-26 10-46-42.png)
 
 
 
